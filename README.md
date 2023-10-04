@@ -7,6 +7,7 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 - The vertical number on the left of the grid comes first
 - When sending LowTap code, leave a short pause between the first and second grid coordinates
 - Leave a longer pause between sets of coordinates (letters)
+
 ***The recommended approach to pause timing is to keep a beat in your head, like a ticking clock. In time with the beat, tap out the first number, pause for a single beat, then tap out the second number. Pause for 3 beats between letters.***
 
 ***26 33 45 spells LOW***
