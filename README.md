@@ -2,6 +2,8 @@
 A low-barrier, expanded implementation of the "tapcode" communications protocol. LowTap can be used effictively **in minutes** with **no memorization to become proficient!**
 **Low**-barrier **tap**code - **LowTap**
 
+![](https://github.com/K3KDW/LowTap/blob/main/LowTap_Chart.png?raw=true)
+
 ## Simplicity
 **You will know LowTap if you read these 3 rules and write out a chart**  
 - The vertical number on the left of the grid comes first
@@ -11,8 +13,6 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 ***The recommended approach to pause timing is to keep a beat in your head, like a ticking clock. In time with the beat, tap out the first number, pause for a single beat, then tap out the second number. Pause for 3 beats between letters.***
 
 ***26 33 45 spells LOW***
-
-![](https://github.com/K3KDW/LowTap/blob/main/LowTap_Chart.png?raw=true)
 
 With the chart in hand, you can now use LowTap! **There is no need to memorize grid numbers.** A good middle ground is to memorize the left column, **A G M S Y 4**, so you can easily count down to the correct row from the first grid and count over with the second.
 
