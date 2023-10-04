@@ -8,13 +8,7 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 2 When sending LowTap code, leave a short pause between the first and second grid coordinates
 3 Leave a longer pause between sets of coordinates (letters)
 
-   1  2  3  4  5  6
-1  A  B  C  D  E  F
-2  G  H  I  J  K  L
-3  M  N  O  P  Q  R
-4  S  T  U  V  W  X
-5  Y  Z  0  1  2  3
-6  4  5  6  7  8  9
+![https://github.com/K3KDW/LowTap/blob/main/LowTap_Chart.png?raw=true]
 
 With the chart in hand, you can now use LowTap! **There is no need to memorize grid numbers.** A good middle ground is to memorize the left column, **A G M S Y 4**, so you can easily count down to the correct row from the first set of grid coordinates and count over with the second set.
 
