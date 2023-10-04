@@ -9,7 +9,7 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 - Leave a longer pause between sets of coordinates (letters)
 ***The recommended approach to pause timing is to keep a beat in your head, like a ticking clock. In time with the beat, tap out the first number, pause for a single beat, then tap out the second number. Pause for 3 beats between letters.***
 
-***23 33 45 spells LOW***
+***26 33 45 spells LOW***
 
 ![](https://github.com/K3KDW/LowTap/blob/main/LowTap_Chart.png?raw=true)
 
