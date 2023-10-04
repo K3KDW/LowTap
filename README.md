@@ -3,7 +3,8 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 **Low**-barrier **tap**code - **LowTap**
 
 ## Simplicity
-**You will know LowTap if you read these 3 rules and write out a chart**
+####You will know LowTap if you read these 3 rules and write out a chart
+
 1 The vertical number on the left of the grid comes first
 2 When sending LowTap code, leave a short pause between the first and second grid coordinates
 3 Leave a longer pause between sets of coordinates (letters)
