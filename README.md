@@ -1,5 +1,5 @@
 # LowTap
-A low-barrier, expanded implementation of the "tapcode" communications protocol. LowTap can be used effictively **in minutes** with **no memorization to become proficient!**
+A low-barrier, expanded implementation of the "tapcode" communications protocol. LowTap can be used effictively **in minutes** with **no memorization to become proficient!** It really is easy enough to learn by doing.
 **Low**-barrier **tap**code - **LowTap**
 
 ![](https://github.com/K3KDW/LowTap/blob/main/LowTap_Chart.png?raw=true)
