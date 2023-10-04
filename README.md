@@ -14,7 +14,7 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 
 ![](https://github.com/K3KDW/LowTap/blob/main/LowTap_Chart.png?raw=true)
 
-With the chart in hand, you can now use LowTap! **There is no need to memorize grid numbers.** A good middle ground is to memorize the left column, **A G M S Y 4**, so you can easily count down to the correct row from the first set of grid coordinates and count over with the second set.
+With the chart in hand, you can now use LowTap! **There is no need to memorize grid numbers.** A good middle ground is to memorize the left column, **A G M S Y 4**, so you can easily count down to the correct row from the first grid and count over with the second.
 
 Proficiency is about consistent timing but pause lengths are relative and flexible. Consistency is good for everyone but don't stress it. Start slow and read straight from the chart on your first attempt. Memorization will happen naturally if you use LowTap frequently but you only need to memorize if you want to become fast, fluent without the chart, or enjoy the learning process.
 
