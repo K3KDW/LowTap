@@ -78,7 +78,7 @@ While tapping out Morse Code dits and dahs on my leg for practice, I realized th
 
 When all else is stripped away, whether by imprisonment, oppresson, or natural disaster, **the ability to communicate and the option to communicate securely are critical.** Modern communication should be encrypted and LowTap is no exception.
 
-#### Morse Code pros over LowCode
+#### Morse Code pros over LowTap
 - Inherently faster and more efficient than LowTap
 - In the context of Ham Radio, Morse Code is practiced worldwide
 - The challenge of learning is itself satisfying to many
