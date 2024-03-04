@@ -70,9 +70,9 @@ Additionally, a 6x6 grid allows for **unbreakable encryption (if implemented cor
 Low-barrier doesn't mean much in the context of ultra simple tapcode but means a great deal in the context of unbreakable encryption in a few minutes of training. Encryption is new and scary to most LowTap removes that barrier.
 
 ## What about Morse Code?
-Morse Code is brilliant. It's simple enough to be highly effective, even through inconsistent radio noise, yet complex enough to accommodate entire books of information easily. On-off keying protocols provide an amazing signal to noise ratio, especially considering how simple they are. Morse Code is a digital mode that doesn't require a computer, complicated radios, or much power to emable worldwide communication. It's the best bang for the buck in communications.
+Morse Code is brilliant. It's simple enough to be highly effective, even through inconsistent radio noise, yet complex enough to accommodate entire books of information easily. On-off keying protocols provide an amazing signal to noise ratio, especially considering how simple they are. Morse Code is a digital mode that doesn't require a computer, complicated radios, or much power to enable worldwide communication. It's the best bang for the buck in communications.
 
-Despite all the benefits, Morse Code is hard to learn. My lifestyle could not reliably acommodate the intensity and consistency of Morse Code training. I also found the people I most want to communicate with completely averse to learning Morse Code with me. Aside from random contacts on the radio I was going to be isolated.
+Despite all the benefits, Morse Code is hard to learn. My lifestyle could not consistently acommodate the intensity and consistency of Morse Code training. I also found the people I most want to communicate with completely averse to learning Morse Code with me. Aside from random contacts on the radio I was going to be isolated.
 
 While tapping out Morse Code dits and dahs on my leg for practice, I realized that a tap works great for a dit but what about dahs? A short swipe action is close but made me wonder if information could be sent through a single action instead of a combination of two. The obvious prior art is tapcode. Though not as useful in prisons, the convenience and clarity of numbers for other contexts far outweigh the addition of a single row and column.
 
@@ -90,4 +90,4 @@ If you don't mind the steep learning curve and love the thrill of random, often 
 - Easier to convince specific users to learn who may be averse to Morse Code
 - Easily encrypted **for non-Amateur Radio use only**
 
-Morese Code prosigns, q codes, and shorthand in general have intentionally been left out of LowTap. There is value in these tools but the greatest value of all is simplicity and ease of learning. An excellent tool you can't use isn't excellent. Though it won't be part of LowTap itself, just like prosigns are not part of International Morse Code, feel free to use them in the context of LowTap or create your own as you need!
+Morse Code prosigns, q codes, and shorthand in general have intentionally been left out of LowTap. There is value in these tools but the greatest value of all is simplicity and ease of learning. An excellent tool you can't use isn't excellent. Though it won't be part of LowTap itself, just like prosigns are not part of International Morse Code, feel free to use them in the context of LowTap or create your own as you need!
