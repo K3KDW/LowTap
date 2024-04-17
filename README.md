@@ -6,7 +6,7 @@ A low-barrier, expanded implementation of the "tapcode" communications protocol.
 
 ## Simplicity
 **You will know LowTap if you read these 3 rules and write out a chart**  
-- The vertical number on the left of the grid comes first
+- The vertical number on the left of the grid comes first. Think of the saying "Up and over!" if you need a reminder.
 - When sending LowTap code, leave a short pause between the first and second grid coordinates
 - Leave a longer pause between sets of coordinates (letters)
 
