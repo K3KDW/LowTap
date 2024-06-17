@@ -4,7 +4,7 @@
 
 // Search for "EDIT" to adjust speed and tone (if using a speaker) parameters
 
-// Pins for the onboard LED, optional piezo buzzer, optional speaker/headphones, optional CW transmitter trigger, and microphone
+// Pins for the onboard LED, optional piezo buzzer, optional speaker/headphones, optional CW transmitter trigger, and optional microphone for decoding
 const int ledPin = 13;
 const int piezoPin = 12;
 const int speakerPin = 11;
@@ -54,14 +54,13 @@ const char* lowTapCode[] = {
 // Timing constants
 // EDIT tapDuration below to adjust speed.
 const int tapDuration = 200;  // Duration of a tap in milliseconds.
-// Multipliers below conform to LowTap best practice
 const int pauseBetweenTaps = tapDuration;  // Pause between taps in the same coordinate
 const int pauseBetweenCoordinates = tapDuration * 3;  // Pause between row and column taps
 const int letterSpacing = tapDuration * 5;  // Space between letters
 const int wordSpacing = tapDuration * 7;  // Space between words
 
 // PWM frequency and duration for the speaker and piezo
-// EDIT the number below to adjust the tone if using a speaker
+// EDIT pwmFrequency below to adjust the tone if using a speaker
 const int pwmFrequency = 700;  // Frequency of the PWM signal
 const int pwmPeriod = 1000000 / pwmFrequency;  // Period in microseconds
 
