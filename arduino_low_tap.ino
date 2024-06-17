@@ -1,10 +1,14 @@
-//Arduino code to blink input from the keyboard using the Arduino IDE serial monitor.
-//Roe Gammon K3KDW
-//6/17/24
+// Arduino code to blink input from the keyboard using the Arduino IDE serial monitor
+// Roe Gammon K3KDW
+// 6/17/24
 
-// Pin for onboard LED and an optional piezo buzzer
+// Search for "EDIT" to adjust speed and tone (if using a speaker) parameters
+
+// Pins for the onboard LED, optional piezo buzzer, optional speaker/headphones, and optional CW transmitter trigger
 const int ledPin = 13;
-const int speakerPin = 12;
+const int piezoPin = 12;
+const int speakerPin = 11;
+const int cwPin = 10;  // CW transmitter pin
 
 // LowTap definitions using dashes for row and column taps
 const char* lowTapCode[] = {
@@ -47,16 +51,24 @@ const char* lowTapCode[] = {
 };
 
 // Timing constants
+// EDIT tapDuration below to adjust speed.
 const int tapDuration = 200;  // Duration of a tap in milliseconds.
-//EDIT tapDuration to adjust speed. Multipliers below conform to LowTap best practice.
+// Multipliers below conform to LowTap best practice
 const int pauseBetweenTaps = tapDuration;  // Pause between taps in the same coordinate
 const int pauseBetweenCoordinates = tapDuration * 3;  // Pause between row and column taps
 const int letterSpacing = tapDuration * 5;  // Space between letters
-const int wordSpacing = tapDuration * 10;  // Space between words
+const int wordSpacing = tapDuration * 7;  // Space between words
+
+// PWM frequency and duration for the speaker and piezo
+// EDIT the number below to adjust the tone if using a speaker
+const int pwmFrequency = 700;  // Frequency of the PWM signal
+const int pwmPeriod = 1000000 / pwmFrequency;  // Period in microseconds
 
 void setup() {
   pinMode(ledPin, OUTPUT);
+  pinMode(piezoPin, OUTPUT);
   pinMode(speakerPin, OUTPUT);
+  pinMode(cwPin, OUTPUT);
   Serial.begin(9600);
   Serial.println("Enter a message to send using LowTap:");
 }
@@ -106,15 +118,25 @@ void sendLowTapCode(const char* code) {
 void sendTap() {
   // Blink the LED
   digitalWrite(ledPin, HIGH);
-  
-  // Produce a beep on the speaker
-  // EDIT THE TONE (the number below) AS YOU LIKE
-  tone(speakerPin, 1000, tapDuration);  // 1000 Hz beep for the duration of a tap
-  
-  delay(tapDuration);
+  // Key the CW transmitter
+  digitalWrite(cwPin, HIGH);
 
-  // Stop LED and beep
+  // Generate PWM signal for the piezo buzzer
+  unsigned long startTime = millis();
+  while (millis() - startTime < tapDuration) {
+    digitalWrite(piezoPin, HIGH);
+    delayMicroseconds(pwmPeriod / 2);
+    digitalWrite(piezoPin, LOW);
+    delayMicroseconds(pwmPeriod / 2);
+  }
+  
+  // Generate a tone for the speaker using the tone function
+  tone(speakerPin, pwmFrequency, tapDuration);  // Beep for the duration of a tap
+
+  // Stop LED and speaker tone
   digitalWrite(ledPin, LOW);
+  digitalWrite(cwPin, LOW);  // Stop keying the CW transmitter
   noTone(speakerPin);  // Stop the tone
+  
   delay(pauseBetweenTaps);  // Space after tap
 }
