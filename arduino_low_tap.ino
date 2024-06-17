@@ -2,11 +2,9 @@
 //Roe Gammon K3KDW
 //6/17/24
 
-//TO DO
-//Add buzzer to simulate use with a simple cw radio
-
-// Pin for onboard LED
+// Pin for onboard LED and an optional piezo buzzer
 const int ledPin = 13;
+const int speakerPin = 12;
 
 // LowTap definitions using dashes for row and column taps
 const char* lowTapCode[] = {
@@ -58,6 +56,7 @@ const int wordSpacing = tapDuration * 10;  // Space between words
 
 void setup() {
   pinMode(ledPin, OUTPUT);
+  pinMode(speakerPin, OUTPUT);
   Serial.begin(9600);
   Serial.println("Enter a message to send using LowTap:");
 }
@@ -105,8 +104,17 @@ void sendLowTapCode(const char* code) {
 
 // Function to send a single tap
 void sendTap() {
+  // Blink the LED
   digitalWrite(ledPin, HIGH);
+  
+  // Produce a beep on the speaker
+  // EDIT THE TONE (the number below) AS YOU LIKE
+  tone(speakerPin, 1000, tapDuration);  // 1000 Hz beep for the duration of a tap
+  
   delay(tapDuration);
+
+  // Stop LED and beep
   digitalWrite(ledPin, LOW);
+  noTone(speakerPin);  // Stop the tone
   delay(pauseBetweenTaps);  // Space after tap
 }
